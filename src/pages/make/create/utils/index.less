@@ -1,0 +1,112 @@
+:global(.ant-list .ant-row){
+  
+  .listContent{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 200%;
+    height: 200%;
+    transform: scale(0.5);
+    transform-origin: 0 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+.dropView{
+  cursor: move;
+  position: relative;
+}
+
+.parentContainer{
+  padding: 6px 0 0 6px;
+}
+
+.pointerEvents {
+
+  > * {
+    pointer-events: none;
+  }
+
+  .dropView {
+    pointer-events: auto;
+  }
+
+  .ContainerView{
+    pointer-events: auto;
+  }
+
+}
+
+
+.moveContainer{
+
+  opacity: 0.3;
+
+  .dropView {
+    pointer-events: none;
+  }
+
+  .ContainerView{
+    pointer-events: none;
+  }
+}
+
+.ContainerView{
+  position: relative;
+  padding: 6px;
+  min-width: 20px;
+  min-height: 20px;
+  border: dashed #d88d9d 1px;
+}
+
+
+.dropViewHover{
+  cursor: move;
+  border: #326ad1 dashed 1.2px;
+}
+
+
+.selectBool::before{
+  content: '';
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  border: #26a8e4 solid 1.2px;
+}
+
+.isInline{
+  display: inline-block;
+}
+
+.containerNamespace{
+  position: absolute;
+  left: 1em;
+  top: -0.5em;
+  font-size: 0.8em;
+  background-color: #fff;
+  line-height: 1em;
+  color: #db5b77;
+}
+
+
+
+
+@Placeholder-color: rgba(59, 145, 255,0.4);
+
+.Placeholder{
+  padding: 4px;
+  border: #fff dashed 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: @Placeholder-color;
+  color: #fff;
+}
+

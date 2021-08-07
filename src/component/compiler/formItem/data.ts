@@ -1,0 +1,17 @@
+export const ITEM_DATA = {
+  c: ['colon'],
+  d: ['dependencies'],
+  e: ['extra'],
+  g: ['getValueFromEvent', 'getValueProps'],
+  h: ['hasFeedback', 'help', 'hidden', 'htmlFor'],
+  i: ['initialValue'],
+  l: ['label', 'labelAlign', 'labelCol'],
+  m: ['messageVariables'],
+  n: ['name', 'normalize', 'noStyle'],
+  p: ['preserve'],
+  r: ['required', 'rules'],
+  s: ['shouldUpdate'],
+  t: ['shouldUpdate', 'trigger'],
+  v: ['validateFirst', 'validateStatus', 'validateTrigger', 'valuePropName'],
+  w: ['wrapperCol'],
+} as any;
